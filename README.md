@@ -1,36 +1,14 @@
 # megadecrypter
 
-This app decrypts `mega://enc2` links passed as an argument
-
-## Requirements
-- [Crystal](https://crystal-lang.org) ([install instructions](https://crystal-lang.org/docs/installation/index.html))
+The feature of this image is used to decrypt MEGA ec2 links.
 
 ## Installation
 
-1. `git clone https://github.com/denysvitali/megadecrypter/`
-2. `cd megadecrypter`
-3. `crystal build --release src/megadecrypter.cr`
-
-If you want to install it permanently:  
-
-1. `sudo mv ./megadecrypter /usr/bin/`
-2. `sudo chmod 755 /usr/bin/megadecrypter; sudo chown root:root /usr/bin/megadecrypter`
-
-If you want to run it just once:
-
-1. `./megadecrypter`
+docker build --tag=imagename .
 
 ## Usage
 
-`megadecrypter "mega://enc2?encryptedString"`
-
-## Contributing
-
-1. Fork it ( https://github.com/denysvitali/megadecrypter/fork )
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create a new Pull Request
+docker run -it megadecrypter mega://enc2
 
 ## Contributors
 
